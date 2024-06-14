@@ -80,6 +80,7 @@ const severities2 = [2.0, 3.0, 4.5, 4.0];
 const severities3 = [4.0, 5.0, 6.0, 7.0];
 const severities4 = [9.0, 8.5, 4.0, 2, 3, 5];
 const severities5 = [9.5, 4.0, 4.0, 4.0, 8, 9];
+
 // console.log(find_grade_type(severities1));
 // console.log(find_grade_type(severities2));
 // console.log(find_grade_type(severities3));

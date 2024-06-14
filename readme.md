@@ -183,22 +183,15 @@ def find_grade_type(arr):
     else:
         return "No Grade"
 
-# Example usage for all grades
-severity_score_a = [2, 2, 2]
-severity_score_b = [3.5, 3.0, 4.0, 3.8]
-severity_score_c = [3.9, 4.0, 4.5, 5.0]
-severity_score_d = [3.0, 4.5, 5.5, 9.0]
-severity_score_e = [3.0, 4.0, 5.0, 9.0, 9.5]
-invalid_input = "not an array"
-empty_input = []
+# Example usage change value to check
 
-print(find_grade_type(severity_score_a))  # Expected: A
-print(find_grade_type(severity_score_b))  # Expected: B
-print(find_grade_type(severity_score_c))  # Expected: C
-print(find_grade_type(severity_score_d))  # Expected: D
-print(find_grade_type(severity_score_e))  # Expected: E
-print(find_grade_type(invalid_input))     # Expected: Please provide an array of scores
-print(find_grade_type(empty_input))       # Expected: A
+severities1 = [3.0, 3.5, 4.0, 4.5, 3.9];
+severities2 = [2.0, 3.0, 4.5, 4.0];
+severities3 = [4.0, 5.0, 6.0, 7.0];
+severities4 = [9.0, 8.5, 4.0, 2, 3, 5];
+severities5 = [9.5, 4.0, 4.0, 4.0];
+print(find_grade_type(severities1))
+
 ```
 
 #### Run code using following command :
