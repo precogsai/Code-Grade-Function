@@ -46,7 +46,7 @@ def find_grade_type(arr):
         return 'B'
     elif average <= 5.5 and critical_count == 0 and high_count / total_count <= 0.20:
         return 'C'
-    elif critical_count > 0 and critical_count / total_count <= 0.20:
+    elif critical_count / total_count <= 0.20:
         return "D"
     elif critical_count / total_count > 0.20:
         return "E"
@@ -57,7 +57,7 @@ def find_grade_type(arr):
 
 severities1 = [3.0, 3.5, 4.0, 4.5, 3.9];
 severities2 = [2.0, 3.0, 4.5, 4.0];
-severities3 = [4.0, 5.0, 6.0, 7.0];
+severities3 = [4.0, 5.0, 6.0, 7.0,8];
 severities4 = [9.0, 8.5, 4.0, 2, 3, 5];
 severities5 = [9.5, 4.0, 4.0, 4.0];
-print(find_grade_type(severities1))  
+print(find_grade_type(severities3))  

@@ -65,7 +65,7 @@ function find_grade_type(arr) {
     highCount / totalCount <= 0.2
   ) {
     return "C";
-  } else if (criticalCount > 0 && criticalCount / totalCount <= 0.2) {
+  } else if (criticalCount / totalCount <= 0.2) {
     return "D";
   } else if (criticalCount / totalCount > 0.2) {
     return "E";
