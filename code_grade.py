@@ -18,6 +18,14 @@ def find_grade_type(arr):
     """
     if not isinstance(arr, list):
         return 'Please provide an array of scores'
+    
+    # Check if all elements in arr are floats and <= 10
+    for score in arr:
+        if not isinstance(score, (int, float)):
+            return 'Invalid Input: Scores must be float'
+        if score > 10:
+            return 'Invalid Input: Scores must be <= 10'
+
     if len(arr) == 0:
         return 'A'
   

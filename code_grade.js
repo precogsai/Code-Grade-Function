@@ -37,6 +37,9 @@ function find_grade_type(arr) {
   let criticalCount = 0;
 
   for (let score of arr) {
+    if (typeof score !== "number" || score > 10) {
+      return "Invalid Input: Scores must be float and <= 10";
+    }
     if (lowThresholdMin <= score && score <= lowThresholdMax) {
       lowCount++;
     } else if (mediumThresholdMin <= score && score <= mediumThresholdMax) {
@@ -79,7 +82,7 @@ const severities1 = [3.0, 3.5, 4.0, 4.5, 3.9];
 const severities2 = [2.0, 3.0, 4.5, 4.0];
 const severities3 = [4.0, 5.0, 6.0, 7.0, 8];
 const severities4 = [9.0, 8.5, 4.0, 2, 3, 5];
-const severities5 = [9.5, 4.0, 4.0, 4.0, 8, 9];
+const severities5 = [7, 4.0, 4.0, 4.0, 3];
 
 // console.log(find_grade_type(severities1));
 // console.log(find_grade_type(severities2));
